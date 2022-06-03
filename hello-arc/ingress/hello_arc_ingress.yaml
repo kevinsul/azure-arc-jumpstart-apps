@@ -11,9 +11,6 @@ spec:
   rules:
   - http:
       paths:
-      - pathType: ImplementationSpecific
-        backend:
-          service:
-            name: hello-arc
-            port: 
-              number: 8080
+      - backend:
+          serviceName: hello-arc
+          servicePort: 8080
